@@ -29,14 +29,14 @@ const Landing = ({ setSelectedPage }: Props) => {
                 hidden: { opacity: 0 },
                 visible: { opacity: 1 },
               }}
-              src="assets/KevinTorres.jpeg"
+              src="assets/LeslieGarces.jpg"
               alt="profile"
               className="rounded-t-full hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[300px] md:max-w-[400px]"
             />
           </div>
         ) : (
           <img
-            src="assets/KevinTorres.jpeg"
+            src="assets/LeslieGarces.jpg"
             alt="profile"
             className="rounded-t-full hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[300px] md:max-w-[400px]"
           />
@@ -56,14 +56,15 @@ const Landing = ({ setSelectedPage }: Props) => {
           }}
         >
           <p className="text-6xl font-playfair z-10 text-center md:text-start">
-            Kevin{" "}
+            Leslie{" "}
             <span className="xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush before:absolute before:-left-[25px] before:-top-[70px] before:z-[-1]">
-              Torres
+              Garcés
             </span>
           </p>
           <p className="mt-10 mb-7 text-md text-center md:text-start">
-            I'am a Software Developer with years of experience in React, Node,
-            TypeScript, Go, Python, AWS and Azure.
+            Bienvenido/a a mi página web, soy ingeniera industrial con años de
+            experiencia en aseguramiento de la calidad en la industria
+            alimentaria.
           </p>
         </motion.div>
 
@@ -84,7 +85,7 @@ const Landing = ({ setSelectedPage }: Props) => {
             onClick={() => setSelectedPage(Sections.CONTACT)}
             href="#Contact"
           >
-            Contact Me
+            Contáctame
           </AnchorLink>
           <AnchorLink
             className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
@@ -92,7 +93,7 @@ const Landing = ({ setSelectedPage }: Props) => {
             href="#Contact"
           >
             <div className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center font-playfair px-10">
-              Let's talk.
+              Por este medio.
             </div>
           </AnchorLink>
         </motion.div>

@@ -1,6 +1,6 @@
 import { Dispatch, SetStateAction } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import { Sections } from "../enums/SectionsEnum";
+import { PagesMap, pagesMap, Sections } from "../enums/SectionsEnum";
 
 const Link = ({
   page,
@@ -21,7 +21,7 @@ const Link = ({
       href={`#${page === "Skills & Experience" ? "Skills" : page}`}
       onClick={() => setSelectedPage(upperCasePage)}
     >
-      {page}
+      {pagesMap[page as keyof PagesMap]}
     </AnchorLink>
   );
 };

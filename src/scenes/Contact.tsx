@@ -30,7 +30,7 @@ const Contact = () => {
       >
         <div>
           <p className="font-playfair font-semibold text-4xl mb-5">
-            <span className="text-yellow ">CONTACT ME</span> TO GET STARTED
+            <span className="text-yellow ">CONTÁCTAME</span> VIA EMAIL
           </p>
           <div className="flex md:justify-end my-5">
             <LineGradient width="w-1/2" />
@@ -67,13 +67,13 @@ const Contact = () => {
           <form
             target="_blank"
             onSubmit={onSubmit}
-            action="https://formsubmit.co/b06e5b68f62e4f12a4d4d2cb1fa0d4ff"
+            action="https://formsubmit.co/lesliegarces96@yahoo.com"
             method="POST"
           >
             <input
               type="text"
               className="w-full bg-blue font-semibold placeholder-opaque-black p-3"
-              placeholder="NAME"
+              placeholder="NOMBRE"
               {...register("name", { required: true, maxLength: 100 })}
             />
             {errors.name && (
@@ -102,7 +102,7 @@ const Contact = () => {
               rows={4}
               cols={50}
               className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
-              placeholder="MESSAGE"
+              placeholder="MENSAJE"
               {...register("message", {
                 required: true,
                 maxLength: 2000,
@@ -120,7 +120,7 @@ const Contact = () => {
               type="submit"
               className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500"
             >
-              SEND ME A MESSAGE
+              ENVÍAME UN MENSAJE
             </button>
           </form>
         </motion.div>
